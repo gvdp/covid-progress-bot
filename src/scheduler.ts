@@ -1,7 +1,7 @@
-import {main} from "./main";
+import {handler} from "./handler";
 
 
 
-setInterval(main, 5000)
+setInterval(handler, 5000)
 
 console.log('bot started')
