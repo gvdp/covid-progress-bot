@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta charset="utf-8"/>        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <title>Dashboard Covid Vaccinaties België</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"/><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="alternate" hreflang="nl" href="https://covid-vaccinatie.be/nl" />
+    <link rel="alternate" hreflang="fr" href="https://covid-vaccinatie.be/fr" />
+    <link rel="alternate" hreflang="en" href="https://covid-vaccinatie.be/en" />
+    <link rel="alternate" hreflang="x-default" href="https://covid-vaccinatie.be/en" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 day">
+
+    <meta name="description" content="Actuele corona vaccinatie cijfers voor België in een overzichtelijk dashboard. Dagelijks geüpdatet en onderhouden door vrijwilligers.">
+    <meta property="og:title" content="Dashboard Covid Vaccinaties België">
+    <meta property="og:locale" content="nl_BE">
+    <meta property="og:url" content="https://covid-vaccinatie.be/">
+    <meta property="og:sitename" content="Covid Vaccinatie België">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Actuele corona vaccinatie cijfers voor België in een overzichtelijk dashboard. Dagelijks geüpdatet en onderhouden door vrijwilligers.">
+    <meta property="og:image" content="https://covid-vaccinatie.be/img/vaccination.jpg">
+    <meta property="og:image:url" content="https://covid-vaccinatie.be/img/vaccination.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Actuele corona vaccinatie cijfers voor België in een overzichtelijk dashboard. Dagelijks geüpdatet en onderhouden door vrijwilligers.">
+    <meta name="twitter:image" content="https://covid-vaccinatie.be/img/vaccination.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mdb.300.css"/>        <link rel="stylesheet" href="/cssmin/style.min.v1611933048.css"/>            </head>
+<body class="bg-dark">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQ4NG7KRQG"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-SQ4NG7KRQG');
+</script>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-0">
+    <div class="container">
+        <a class="navbar-brand text-light py-3 fs-2 font-weight-bold" href="/nl">
+            Covid Vaccinaties België                </a>
+        <div class="btn-group" role="group">
+            <button id="btnGroupLang" type="button" class="btn btn-outline-info dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
+                nl                    </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupLang">
+                <li><a class="dropdown-item" href="/fr">FR</a></li>
+                <li><a class="dropdown-item" href="/en">EN</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mb-2">
+    <div class="text-info small">
+        <i class="far fa-clock fa-fw"></i>
+        <span class="font-weight-bold"><span class="me-2">LAATSTE UPDATE</span>11:46</span>
+    </div>
+</div>
+<div id="content" class="pt-3 pb-5">
+
+    <div class="container">
+        <div class="row mb-3 mb-lg-5 align-items-lg-stretch">
+            <div class="col-12 col-lg-4">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="card bg-darker mb-3">
+                            <div class="card-body">
+                                <div class="pb-3 text-uppercase font-weight-bold fs-6 text-warning">
+                                    <i class="fas fa-heartbeat fa-fw text-warning me-2"></i>gedeeltelijk gevaccineerd                            </div>
+                                <div class="row gx-0 mb-2 align-items-center">
+                                    <div class="col font-weight-bold">
+                                        Aantal personen                                </div>
+                                    <div class="col-auto fs-5 text-end font-weight-bold text-warning ff-s">259.012</div>
+                                </div>
+                                <div class="row gx-0 mb-2 align-items-center">
+                                    <div class="col">
+                                        <span class="font-weight-bold">Vaccinatiegraad</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in België dat 1 inenting heeft ontvangen ten opzichte van alle mensen in België die voor toediening van het vaccin in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto fs-5 text-end font-weight-bold text-warning ff-s">
+                                        <div class="ps-1">2,821%</div>
+                                    </div>
+                                </div>
+                                <div class="row gx-0 align-items-center">
+                                    <div class="col">
+                                        <span class="font-weight-bold">Volledige bevolking</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in België dat 1 inenting heeft ontvangen ten opzichte van alle mensen in België.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto fs-5 ps-1 font-weight-bold text-end text-warning ff-s">
+                                        2,254%                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="card bg-darker mb-3 mb-md-0">
+                            <div class="card-body">
+                                <div class="pb-3 fs-6 text-success">
+                                    <i class="fas fa-heartbeat fa-fw text-success me-2"></i>
+                                    <span class="font-weight-bold text-uppercase">volledig gevaccineerd</span>
+                                </div>
+                                <div class="row gx-0 mb-2 align-items-center">
+                                    <div class="col font-weight-bold">
+                                        Aantal personen                                </div>
+                                    <div class="col-auto text-end font-weight-bold text-success fs-5 ff-s">7.756</div>
+                                </div>
+                                <div class="row gx-0 mb-2 align-items-center">
+                                    <div class="col">
+                                        <span class="font-weight-bold">Vaccinatiegraad</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in België dat volledig gevaccineerd is ten opzichte van alle mensen in België die voor volledige vaccinatie in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-end fs-5 font-weight-bold text-success ff-s">0,084%</div>
+                                </div>
+                                <div class="row gx-0 align-items-center">
+                                    <div class="col">
+                                        <span class="font-weight-bold">Volledige bevolking</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in België dat volledig gevaccineerd is ten opzichte van alle mensen in België.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto font-weight-bold text-end text-success fs-5 ff-s">
+                                        0,067%                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="card h-100 bg-darker p-2">
+                    <h6 class="text-center pt-1">Aandeel gevaccineerde personen in % van de bevolking</h6>
+                    <canvas id="chartVaccinationCoverage" width="100%"></canvas>
+                    <div class="small pt-2 text-muted text-end">covid-vaccinatie.be - 29/01/2021 17:09</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12 col-xl-4">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-xl-12">
+                        <div class="card bg-darker mb-3">
+                            <div class="card-body pb-2">
+                                <div class="row gx-0 mb-3 align-items-center">
+                                    <div class="col">
+                                        <i class="fas fa-truck fa-fw text-secondary me-2 fs-5"></i>
+                                        <span class="text-uppercase font-weight-bold">Dosissen geleverd</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Het absolute aantal dosissen die in België zijn toegekomen. Voor sommige vaccins zijn 2 dosissen nodig.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-end font-weight-bold text-secondary fs-5 ff-s">470.443</div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        25-01                                    </div>
+                                    <div class="col-4">
+                                        <span class="font-weight-bold ff-s text-secondary">+ 78.390</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span tabindex="0" class="small popover-helper ms-1 font-weight-bold" data-mdb-toggle="popover" data-mdb-placement="top" data-mdb-trigger="focus" data-mdb-content="Pfizer/BioNTech">PFI</span>
+                                    </div>
+                                    <div class="col-3 text-end small">
+                                        <a href="https://cdn.datrix.org/covid/TF%20Vaccination%20-%20Dashboard%20Pfizer-BioNTech%2020210122.xlsx" target="_blank" class="text-reset">BRON<i class="fa-fw fas fa-external-link-alt ms-1"></i></a>                                    </div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        22-01                                    </div>
+                                    <div class="col-4">
+                                        <span class="font-weight-bold ff-s text-secondary">+ 4.000</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span tabindex="0" class="small popover-helper ms-1 font-weight-bold" data-mdb-toggle="popover" data-mdb-placement="top" data-mdb-trigger="focus" data-mdb-content="Moderna">MOD</span>
+                                    </div>
+                                    <div class="col-3 text-end small">
+                                        <a href="https://www.fagg.be/nl/menselijk_gebruik/geneesmiddelen/geneesmiddelen/covid_19/vaccins/leveringen_vaccins_en" target="_blank" class="text-reset">BRON<i class="fa-fw fas fa-external-link-alt ms-1"></i></a>                                    </div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        18-01                                    </div>
+                                    <div class="col-4">
+                                        <span class="font-weight-bold ff-s text-secondary">+ 86.580</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span tabindex="0" class="small popover-helper ms-1 font-weight-bold" data-mdb-toggle="popover" data-mdb-placement="top" data-mdb-trigger="focus" data-mdb-content="Pfizer/BioNTech">PFI</span>
+                                    </div>
+                                    <div class="col-3 text-end small">
+                                        <a href="https://cdn.datrix.org/covid/TF%20Vaccination%20-%20Dashboard%20Pfizer-BioNTech%2020210122.xlsx" target="_blank" class="text-reset">BRON<i class="fa-fw fas fa-external-link-alt ms-1"></i></a>                                    </div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        15-01                                    </div>
+                                    <div class="col-4">
+                                        <span class="font-weight-bold ff-s text-secondary">+ 4.000</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span tabindex="0" class="small popover-helper ms-1 font-weight-bold" data-mdb-toggle="popover" data-mdb-placement="top" data-mdb-trigger="focus" data-mdb-content="Moderna">MOD</span>
+                                    </div>
+                                    <div class="col-3 text-end small">
+                                        <a href="https://www.fagg-afmps.be/nl/news/coronavirus_wekelijkse_update_van_leveringen_van_vaccins_en_informatie_over" target="_blank" class="text-reset">BRON<i class="fa-fw fas fa-external-link-alt ms-1"></i></a>                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-end">
+                                    <a href="/nl/dosissen-geleverd" class="font-weight-bold text-reset d-block py-2 px-3 small">
+                                        BEKIJK ALLE DATA                                    <i class="fas fa-angle-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-12">
+                        <div class="card bg-darker mb-3">
+                            <div class="card-body pb-1">
+                                <div class="row gx-0 mb-3 align-items-center">
+                                    <div class="col">
+                                        <i class="fas fa-syringe fa-fw text-primary me-2 fs-5"></i>
+                                        <span class="font-weight-bold text-uppercase">Dosissen toegediend</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Het absolute aantal dosissen dat in België bij een persoon zijn toegediend. Voor sommige vaccins zijn 2 dosissen nodig.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-end font-weight-bold text-primary ff-s fs-5">266.768</div>
+                                </div>
+                                <div class="row gx-0 mb-2 pb-2 small font-weight-bold" style="border-bottom: 3px solid #262626">
+                                    <div class="col-4 offset-3">1e dosis</div>
+                                    <div class="col-2">2e dosis</div>
+                                    <div class="col-3 text-end">totaal</div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        28-01                                    </div>
+                                    <div class="col-4 text-warning">
+                                        <span class="font-weight-bold ff-s">+ 4.678</span>
+                                    </div>
+                                    <div class="col-2 text-success">
+                                        <span class="font-weight-bold ff-s">+ 3.380</span>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span class="font-weight-bold ff-s text-primary">+ 8.058</span>
+                                    </div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        27-01                                    </div>
+                                    <div class="col-4 text-warning">
+                                        <span class="font-weight-bold ff-s">+ 8.689</span>
+                                    </div>
+                                    <div class="col-2 text-success">
+                                        <span class="font-weight-bold ff-s">+ 2.353</span>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span class="font-weight-bold ff-s text-primary">+ 11.042</span>
+                                    </div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        26-01                                    </div>
+                                    <div class="col-4 text-warning">
+                                        <span class="font-weight-bold ff-s">+ 7.396</span>
+                                    </div>
+                                    <div class="col-2 text-success">
+                                        <span class="font-weight-bold ff-s">+ 1.273</span>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span class="font-weight-bold ff-s text-primary">+ 8.669</span>
+                                    </div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        25-01                                    </div>
+                                    <div class="col-4 text-warning">
+                                        <span class="font-weight-bold ff-s">+ 9.273</span>
+                                    </div>
+                                    <div class="col-2 text-success">
+                                        <span class="font-weight-bold ff-s">+ 0</span>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span class="font-weight-bold ff-s text-primary">+ 9.273</span>
+                                    </div>
+                                </div>
+                                <div class="row gx-0 mb-1">
+                                    <div class="col-3">
+                                        24-01                                    </div>
+                                    <div class="col-4 text-warning">
+                                        <span class="font-weight-bold ff-s">+ 1.778</span>
+                                    </div>
+                                    <div class="col-2 text-success">
+                                        <span class="font-weight-bold ff-s">+ 0</span>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span class="font-weight-bold ff-s text-primary">+ 1.778</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="text-muted py-2 ps-3 text-lowercase">BRON: sciensano</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <a href="/nl/vaccins-toegediend" class="font-weight-bold text-reset d-block py-2 px-3 small">
+                                        BEKIJK ALLE DATA                                    <i class="fas fa-angle-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-12">
+                        <div class="card bg-darker mb-3">
+                            <div class="card-body">
+                                <div class="row gx-0 mb-2 align-items-center">
+                                    <div class="col">
+                                        <i class="fas fa-warehouse fa-fw text-danger me-3 fs-5"></i>
+                                        <span class="font-weight-bold text-uppercase">Dosissen in voorraad</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Dit is het verschil tussen het aantal geleverde dosissen en het aantal toegediende dosissen.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto text-end font-weight-bold text-danger fs-5 ff-s">203.675</div>
+                                </div>
+                                <div class="row gx-0 mb-2 align-items-center">
+                                    <div class="col">
+                                        <span class="font-weight-bold">waarvan reserve 2e dosis</span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Het aantal dosissen die nodig zijn om iedereen die een 1e dosis heeft ontvangen, ook een 2e dosis te geven. Dit cijfer gaat uit van een worst-case scenario waar er geen dosissen geleverd worden in de komende 21 dagen.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto fs-6 ps-1 font-weight-bold text-end text-danger ff-s">
+                                        251.256                                </div>
+                                </div>
+                                <div class="row gx-0 align-items-center">
+                                    <div class="col">
+                                        <span class="font-weight-bold">waarvan beschikbare dosissen </span>
+                                        <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Het verschil tussen het totaal aantal dosissen in voorraad en het aantal dosissen in reserve voor het toedienen van de 2e dosis. Dit cijfer gaat uit van een worst-case scenario waar er geen dosissen geleverd worden in de komende 21 dagen.">
+                                            <i class="far fa-question-circle fs-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto fs-6 ps-1 font-weight-bold text-end text-danger ff-s">
+                                        -47.581                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-8">
+                <div class="btn-group d-flex d-sm-none mb-3" role="group">
+                    <button id="btnGroupChartSelection" type="button" class="btn btn-outline-info w-100 dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-chart-bar me-1"></i>
+                        Grafiek kiezen                </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupChartSelection">
+                        <li><a class="dropdown-item" href="#" data-open-chart="myChart-container">Geleverde vs toegediende dosissen</a></li>
+                        <li><a class="dropdown-item" href="#" data-open-chart="dosesAdministeredCumulativeChart-container">Dosissen toegediend (cumulatief)</a></li>
+                        <li><a class="dropdown-item" href="#" data-open-chart="vaccinesAdministeredChart-container">Toegediende dosissen per dag</a></li>
+                    </ul>
+                </div>
+                <div class="d-none d-sm-block">
+                    <div class="d-inline-block mb-3">
+                        <button type="button" class="btn btn-outline-info active me-2 align-items-center d-flex px-2" data-open-chart="myChart-container">
+                            <i class="fas fa-fw fa-chart-line fs-5 me-2"></i>
+                            <span>Geleverd vs toegediend</span>
+                        </button>
+                    </div>
+                    <div class="d-inline-block mb-3">
+                        <button type="button" class="btn btn-outline-info me-2 align-items-center d-flex px-2" data-open-chart="dosesAdministeredCumulativeChart-container">
+                            <i class="fas fa-fw fa-chart-line fs-5 me-2"></i>
+                            <span>Dosissen toegediend</span>
+                        </button>
+                    </div>
+                    <div class="d-inline-block mb-3">
+                        <button type="button" class="btn btn-outline-info align-items-center d-flex px-2" data-open-chart="vaccinesAdministeredChart-container">
+                            <i class="fas fa-fw fa-chart-bar fs-5 me-2"></i>
+                            <span>Toegediend per dag</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card bg-darker text-white p-2 mb-3">
+                    <div id="myChart-container" class="chart">
+                        <h6 class="text-center pt-1">Geleverde vs toegediende dosissen</h6>
+                        <canvas id="myChart" width="100%"></canvas>
+                    </div>
+                    <div id="dosesAdministeredCumulativeChart-container" class="chart d-none">
+                        <h6 class="text-center pt-1">Dosissen toegediend (cumulatief)</h6>
+                        <canvas id="dosesAdministeredCumulativeChart" width="100%"></canvas>
+                    </div>
+                    <div id="vaccinesAdministeredChart-container" class="chart d-none">
+                        <h6 class="text-center pt-1">Toegediende dosissen per dag</h6>
+                        <canvas id="vaccinesAdministeredChart" width="100%"></canvas>
+                    </div>
+                    <div class="small pt-2 text-muted text-end">covid-vaccinatie.be - 29/01/2021 17:09</div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mb-4 text-light">Per doelgroep</h4>
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card bg-darker mb-3 p-3">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h5 class="card-title font-weight-bold mb-4 py-2 text-center">Bewoners en personeel woonzorgcentra</h5>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-12 col-xl-6 mb-4 mb-sm-0 mb-md-4 mb-xl-0">
+                            <div class="row align-items-center">
+                                <div class="col col-sm-12 col-md mb-sm-2 text-sm-center text-md-start text-xl-center">
+                                    <i class="fas fa-heartbeat fa-fw text-warning me-1"></i>
+                                    <span class="font-weight-bold">Vaccinatiegraad</span>
+                                    <div class="small font-weight-bold">gedeeltelijk gevaccineerd</div>
+                                </div>
+                                <div class="col-auto col-sm-12 col-md-auto col-xl-12 text-sm-center text-xl-center">
+                                    <span class="font-weight-bold text-warning fs-4 ff-s">89,686%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-12 col-xl-6">
+                            <div class="row align-items-center">
+                                <div class="col col-sm-12 col-md mb-sm-2 text-sm-center text-md-start text-xl-center">
+                                    <i class="fas fa-heartbeat fa-fw text-success me-1"></i>
+                                    <span class="font-weight-bold">Vaccinatiegraad</span>
+                                    <div class="small font-weight-bold">volledig gevaccineerd</div>
+                                </div>
+                                <div class="col-auto col-sm-12 col-md-auto col-xl-12 text-sm-center text-xl-center">
+                                    <span class="font-weight-bold text-success fs-4 ff-s">2,686%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card bg-darker mb-3 p-3">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h5 class="card-title font-weight-bold mb-4 py-2 text-center">Ziekenhuispersoneel</h5>
+                        </div>
+                        <div class="col-12 text-muted text-center text-uppercase font-weight-bold">
+                            Nog geen gegevens beschikbaar                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mb-4 text-light">Per gewest</h4>
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card bg-darker mb-3 p-3">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h5 class="card-title font-weight-bold mb-4 py-2 text-center">Vlaanderen</h5>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-syringe fa-fw text-primary me-1"></i>
+                                    <span class="font-weight-bold">Vaccins toegediend</span>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <span class="font-weight-bold text-primary fs-4 ff-s">166.025</span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold mb-1">waarvan 1e dosis</div>
+                                    <div class="small font-weight-bold">waarvan 2e dosis</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="mb-1 font-weight-bold text-primary ff-s">163.572</div>
+                                    <div class="font-weight-bold text-primary ff-s">2.453</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-heartbeat fa-fw text-warning me-1"></i>
+                                    <span class="font-weight-bold">Gedeeltelijk gevaccineerd</span>
+                                    <a tabindex="0" class="popover-helper ms-1 co-c" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in Vlaanderen dat tenminste 1 inenting heeft ontvangen ten opzichte van alle mensen in Vlaanderen die voor toediening van het vaccin in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                        <i class="far fa-question-circle fs-6"></i>
+                                    </a>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-warning fs-4 ff-s">3,061%</div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold">Volledige gewest</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-warning ff-s">2,467%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-heartbeat fa-fw text-success me-1"></i>
+                                    <span class="font-weight-bold">Volledig gevaccineerd</span>
+                                    <a tabindex="0" class="popover-helper ms-1 co-c" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in Vlaanderen dat volledig gevaccineerd is ten opzichte van alle mensen in Vlaanderen die voor volledige vaccinatie in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                        <i class="far fa-question-circle fs-6"></i>
+                                    </a>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <span class="font-weight-bold text-success fs-4 ff-s">0,046%</span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold">Volledige gewest</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-success ff-s">0,037%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card bg-darker mb-3 p-3">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h5 class="card-title font-weight-bold mb-4 py-2 text-center">Wallonië</h5>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-syringe fa-fw text-primary me-1"></i>
+                                    <span class="font-weight-bold">Vaccins toegediend</span>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <span class="font-weight-bold text-primary fs-4 ff-s">82.220</span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold mb-1">waarvan 1e dosis</div>
+                                    <div class="small font-weight-bold">waarvan 2e dosis</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="mb-1 font-weight-bold text-primary ff-s">78.672</div>
+                                    <div class="font-weight-bold text-primary ff-s">3.548</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-heartbeat fa-fw text-warning me-1"></i>
+                                    <span class="font-weight-bold">Gedeeltelijk gevaccineerd</span>
+                                    <a tabindex="0" class="popover-helper ms-1 co-c" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in Wallonië dat tenminste 1 inenting heeft ontvangen ten opzichte van alle mensen in Wallonië die voor toediening van het vaccin in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                        <i class="far fa-question-circle fs-6"></i>
+                                    </a>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-warning fs-4 ff-s">2,717%</div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold">Volledige gewest</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-warning ff-s">2,158%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-heartbeat fa-fw text-success me-1"></i>
+                                    <span class="font-weight-bold">Volledig gevaccineerd</span>
+                                    <a tabindex="0" class="popover-helper ms-1 co-c" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in Wallonië dat volledig gevaccineerd is ten opzichte van alle mensen in Wallonië die voor volledige vaccinatie in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                        <i class="far fa-question-circle fs-6"></i>
+                                    </a>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <span class="font-weight-bold text-success fs-4 ff-s">0,123%</span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold">Volledige gewest</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-success ff-s">0,097%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card bg-darker mb-3 p-3">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h5 class="card-title font-weight-bold mb-4 py-2 text-center">Brussel</h5>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-syringe fa-fw text-primary me-1"></i>
+                                    <span class="font-weight-bold">Vaccins toegediend</span>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <span class="font-weight-bold text-primary fs-4 ff-s">17.546</span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold mb-1">waarvan 1e dosis</div>
+                                    <div class="small font-weight-bold">waarvan 2e dosis</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="mb-1 font-weight-bold text-primary ff-s">15.813</div>
+                                    <div class="font-weight-bold text-primary ff-s">1.733</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-heartbeat fa-fw text-warning me-1"></i>
+                                    <span class="font-weight-bold">Gedeeltelijk gevaccineerd</span>
+                                    <a tabindex="0" class="popover-helper ms-1 co-c" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in Brussel dat tenminste 1 inenting heeft ontvangen ten opzichte van alle mensen in Brussel die voor toediening van het vaccin in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                        <i class="far fa-question-circle fs-6"></i>
+                                    </a>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-warning fs-4 ff-s">1,680%</div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold">Volledige gewest</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-warning ff-s">1,298%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row align-items-center mb-1">
+                                <div class="col">
+                                    <i class="fas fa-heartbeat fa-fw text-success me-1"></i>
+                                    <span class="font-weight-bold">Volledig gevaccineerd</span>
+                                    <a tabindex="0" class="popover-helper ms-1 co-c" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-placement="top" data-mdb-content="Percentage mensen in Brussel dat volledig gevaccineerd is ten opzichte van alle mensen in Brussel die voor volledige vaccinatie in aanmerking komen. Op dit moment moet je minstens 18 jaar zijn om in aanmerking te komen voor vaccinatie.">
+                                        <i class="far fa-question-circle fs-6"></i>
+                                    </a>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <span class="font-weight-bold text-success fs-4 ff-s">0,184%</span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="small font-weight-bold">Volledige gewest</div>
+                                </div>
+                                <div class="col-auto text-end">
+                                    <div class="font-weight-bold text-success ff-s">0,142%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mb-4 text-light">Fabrikanten</h4>
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="card bg-darker mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold mb-0 py-2 text-center">Pfizer/BioNTech</h5>
+                    </div>
+                    <div class="p-2 text-success fs-6 font-weight-bold text-uppercase text-center mb-2">
+                        Goedgekeurd                            <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-html="true" data-mdb-placement="top" data-mdb-content="Goedgekeurd voor gebruik voor personen vanaf 16 jaar.<a href='https://www.cbg-meb.nl/actueel/nieuws/2020/12/21/eerste-coronavaccin-goedgekeurd-voor-nederland-en-europa' class='ms-1 font-weight-bold text-muted' target='_blank'>BRON<i class='fa-fw fas fa-external-link-alt ms-1'></i></a>">
+                        <i class="far fa-question-circle fs-6"></i>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">Dosissen</div>
+                            <div class="col-8 text-end">2 / pers.</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Besteld</div>
+                            <div class="col-8 text-end">5.000.000</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Geleverd</div>
+                            <div class="col-8 text-end">462.443</div>
+                        </div>
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">&nbsp;</div>
+                            <div class="col-8 text-end">9,25%</div>
+                        </div>
+                        <div class="font-weight-bold text-center">
+                            Goed voor inenten 2.500.000 personen        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="card bg-darker mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold mb-0 py-2 text-center">Moderna</h5>
+                    </div>
+                    <div class="p-2 text-success fs-6 font-weight-bold text-uppercase text-center mb-2">
+                        Goedgekeurd                            <a tabindex="0" class="popover-helper ms-1 text-reset" data-mdb-toggle="popover" data-mdb-trigger="focus" data-mdb-html="true" data-mdb-placement="top" data-mdb-content="Goedgekeurd voor gebruik voor personen vanaf 18 jaar.<a href='https://www.cbg-meb.nl/actueel/nieuws/2021/01/06/tweede-coronavaccin-goedgekeurd-voor-nederland-en-europa' class='ms-1 font-weight-bold text-muted' target='_blank'>BRON<i class='fa-fw fas fa-external-link-alt ms-1'></i></a>">
+                        <i class="far fa-question-circle fs-6"></i>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">Dosissen</div>
+                            <div class="col-8 text-end">2 / pers.</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Besteld</div>
+                            <div class="col-8 text-end">2.000.000</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Geleverd</div>
+                            <div class="col-8 text-end">8.000</div>
+                        </div>
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">&nbsp;</div>
+                            <div class="col-8 text-end">0,40%</div>
+                        </div>
+                        <div class="font-weight-bold text-center">
+                            Goed voor inenten 1.000.000 personen        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="card bg-darker mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold mb-0 py-2 text-center">AstraZeneca/Oxford</h5>
+                    </div>
+                    <div class="p-2 text-success fs-6 font-weight-bold text-uppercase text-center mb-2">
+                        Goedgekeurd                    </div>
+                    <div class="card-body">
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">Dosissen</div>
+                            <div class="col-8 text-end">2 / pers.</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Besteld</div>
+                            <div class="col-8 text-end">7.740.000</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Geleverd</div>
+                            <div class="col-8 text-end">0</div>
+                        </div>
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">&nbsp;</div>
+                            <div class="col-8 text-end">0,00%</div>
+                        </div>
+                        <div class="font-weight-bold text-center">
+                            Goed voor inenten 3.870.000 personen        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="card bg-darker mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold mb-0 py-2 text-center">Johnson&amp;Johnson</h5>
+                    </div>
+                    <div class="p-2 text-danger fs-6 font-weight-bold text-uppercase text-center mb-2">In ontwikkeling</div>
+                    <div class="card-body">
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">Dosissen</div>
+                            <div class="col-8 text-end">1 / pers.</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Besteld</div>
+                            <div class="col-8 text-end">5.160.000</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Geleverd</div>
+                            <div class="col-8 text-end">0</div>
+                        </div>
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">&nbsp;</div>
+                            <div class="col-8 text-end">0,00%</div>
+                        </div>
+                        <div class="font-weight-bold text-center">
+                            Goed voor inenten 5.160.000 personen        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="card bg-darker mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold mb-0 py-2 text-center">Curevac</h5>
+                    </div>
+                    <div class="p-2 text-danger fs-6 font-weight-bold text-uppercase text-center mb-2">In ontwikkeling</div>
+                    <div class="card-body">
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">Dosissen</div>
+                            <div class="col-8 text-end">2 / pers.</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Besteld</div>
+                            <div class="col-8 text-end">2.900.000</div>
+                        </div>
+                        <div class="row gx-0 mb-1">
+                            <div class="col-4">Geleverd</div>
+                            <div class="col-8 text-end">0</div>
+                        </div>
+                        <div class="row gx-0 mb-4">
+                            <div class="col-4">&nbsp;</div>
+                            <div class="col-8 text-end">0,00%</div>
+                        </div>
+                        <div class="font-weight-bold text-center">
+                            Goed voor inenten 1.450.000 personen        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h4 class="mb-4 text-light">Updates</h4>
+            <div class="card bg-darker mb-2">
+                <div class="p-3">
+                    <div class="row gx-0">
+                        <div class="col-12 col-sm-2 col-md-1 font-weight-bold">27/01</div>
+                        <div class="col-12 col-sm-10 col-md-11">
+                            Het aantal geleverde dosissen van Pfizer is in lijn gebracht met het persbericht van de Taskforce. Het aantal geleverde dosissen van Moderna is in lijn gebracht met de rapportage van het FAGG.                            <a href="https://cdn.datrix.org/covid/TF%20Vaccination%20-%20Dashboard%20Pfizer-BioNTech%2020210122.xlsx" class="ms-2 text-nowrap small font-weight-bold" target="_blank">
+                            BRON                                <i class="fa-fw fas fa-external-link-alt ms-1"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-darker mb-2">
+                <div class="p-3">
+                    <div class="row gx-0">
+                        <div class="col-12 col-sm-2 col-md-1 font-weight-bold">20/01</div>
+                        <div class="col-12 col-sm-10 col-md-11">
+                            Het aantal geleverde dosissen door Pfizer is met terugwerkende kracht bijgesteld op basis van de leveringstabellen die De Tijd kon inzien.                            <a href="https://www.tijd.be/dossiers/coronavirus/pfizer-levert-beetje-extra-toch-al-beperkte-vaccinatie-in-ziekenhuizen/10278585.html" class="ms-2 text-nowrap small font-weight-bold" target="_blank">
+                            BRON                                <i class="fa-fw fas fa-external-link-alt ms-1"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-darker mb-2">
+                <div class="p-3">
+                    <div class="row gx-0">
+                        <div class="col-12 col-sm-2 col-md-1 font-weight-bold">19/01</div>
+                        <div class="col-12 col-sm-10 col-md-11">
+                            Vanaf 19/01 gebruiken we de gegevens van sciensano voor het aantal toegediende vaccins. Historische data werd hierop aangepast. De gegevens van Sciensano zijn afkomstig uit de registraties in VACCINNET+ en zijn dus effectief toegediende aantallen. De accuraatheid van de cijfers zijn afhankelijk van de snelheid van registraties in dit systeem.                            <a href="https://datastudio.google.com/u/0/reporting/c14a5cfc-cab7-4812-848c-0369173148ab/page/hOMwB" class="ms-2 text-nowrap small font-weight-bold" target="_blank">
+                            BRON                                <i class="fa-fw fas fa-external-link-alt ms-1"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-darker mb-2">
+                <div class="p-3">
+                    <div class="row gx-0">
+                        <div class="col-12 col-sm-2 col-md-1 font-weight-bold">18/01</div>
+                        <div class="col-12 col-sm-10 col-md-11">
+                            Cijfers van het aantal toegediende vaccins t.e.m. 16/01 zijn bijgesteld op basis van het rapport van de Taskforce.                            <a href="https://images.vrt.be/width1280/2021/01/17/cd34ec29-5908-11eb-aae0-02b7b76bf47f.jpg" class="ms-2 text-nowrap small font-weight-bold" target="_blank">
+                            BRON                                <i class="fa-fw fas fa-external-link-alt ms-1"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-darker mb-2">
+                <div class="p-3">
+                    <div class="row gx-0">
+                        <div class="col-12 col-sm-2 col-md-1 font-weight-bold">14/01</div>
+                        <div class="col-12 col-sm-10 col-md-11">
+                            De cijfers voor het aantal vaccinaties in de week van 4 januari zijn aangepast op basis van de rechtzetting van Zorg en Gezondheid.                            <a href="https://www.laatjevaccineren.be/rechtzetting-in-234-woonzorgcentra-zijn-al-minstens-31500-personen-gevaccineerd" class="ms-2 text-nowrap small font-weight-bold" target="_blank">
+                            BRON                                <i class="fa-fw fas fa-external-link-alt ms-1"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-darker mb-2">
+                <div class="p-3">
+                    <div class="row gx-0">
+                        <div class="col-12 col-sm-2 col-md-1 font-weight-bold">09/01</div>
+                        <div class="col-12 col-sm-10 col-md-11">
+                            Vanaf 10/01 tellen we 6 i.p.v. 5 dosissen per flesje voor de vaccins van Pfizer/BioNTech na advies van Het Europees Geneesmiddelenagentschap.                            <a href="https://vrtnws.be/p.BlQ4aeopW" class="ms-2 text-nowrap small font-weight-bold" target="_blank">
+                            BRON                                <i class="fa-fw fas fa-external-link-alt ms-1"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h4 class="mb-4 text-light">Download de data</h4>
+            <p>
+                Ga je graag zelf aan de slag met cijfers? Dan kan je onze cijfers hier downloaden.            </p>
+            <a href="/nl/vaccines-administered.xlsx" target="_blank" class="btn btn-outline-primary">Download als excel</a>    </div>
+    </div>
+    <script>
+    </script>
+
+    <div class="container">
+        <div class="mb-3 pt-3">
+            <h4 class="mb-4 text-light">Initiatief van vrijwilligers</h4>
+            <p>
+                Deze pagina is een initiatief van vrijwilligers die bereid zijn een beetje van hun (weinige) vrije tijd te gebruiken om accurate data bij elkaar te sprokkelen om zo dit dashboard te verwezenlijken. De cijfers zijn steeds onderbouwd met erkende bronnen. Dit initiatief is niet in opdracht van een derde partij en is niet verbonden aan een instelling.                    </p>
+            <p>
+                Wilt u helpen met het bijhouden en opzoeken van de data? Spreek me aan op twitter <a href="https://twitter.com/jorisvaesen" target="_blank">@jorisvaesen</a> of via <a href="https://www.linkedin.com/in/jorisvaesen/" target="_blank">linkedin</a>, of stuur een mailtje naar <a href="mailto:joris@datrix.be" target="_blank">joris@datrix.be</a>.                    </p>
+            <p>
+                Wilt u dit project steunen? Ga naar <a href="https://www.buymeacoffee.com/jorisvaesen" target="_blank">buymeacoffee.com/jorisvaesen <i class="fas fa-coffee"></i></a> (PayPal en kredietkaart) of stort rechtstreeks op <span class="text-primary">BE97 7310 5104 8849</span>.
+            </p>
+        </div>
+    </div>
+</div>
+<footer class="pb-5">
+    <div class="container">
+        <h4 class="mb-4 text-light">Cookies</h4>
+        <p>
+            Wij maken gebruik van Google Analytics voor het opvolgen van de bezoekersaantallen. Verder worden er enkel functionele cookies gebruikt.                </p>
+        <p class="pt-5 mb-0">
+            Hosting door <a href="https://www.datrix.be" target="_blank">datrix.be</a>
+        </p>
+    </div>
+</footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script><script src="/jsmin/chart.min.v1611933048.js"></script>                <script>let chartList=[];let tooltipTotal=0;chartList.push(new Chart(document.getElementById('chartVaccinationCoverage').getContext('2d'),{type:'line',data:{labels:["28-12","29-12","30-12","31-12","01-01","02-01","03-01","04-01","05-01","06-01","07-01","08-01","09-01","10-01","11-01","12-01","13-01","14-01","15-01","16-01","17-01","18-01","19-01","20-01","21-01","22-01","23-01","24-01","25-01","26-01","27-01","28-01"],datasets:[{label:'gedeeltelijk gevaccineerd',data:[0.003,0.003,0.007,0.007,0.007,0.007,0.007,0.007,0.02,0.053,0.123,0.202,0.229,0.233,0.28,0.414,0.59,0.774,0.965,1.008,1.033,1.118,1.275,1.439,1.677,1.914,1.977,1.992,2.073,2.137,2.213,2.254],backgroundColor:'#ffb74d',borderColor:'#ffb74d',borderWidth:2,fill:false,pointRadius:2},{label:'volledig gevaccineerd',data:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.001,0.003,0.006,0.006,0.006,0.007,0.007,0.007,0.018,0.038,0.067],backgroundColor:'#81c784',borderColor:'#81c784',borderWidth:2,fill:false,spanGaps:true,pointRadius:2}]},options:{responsive:true,aspectRatio:3.1,aspectRatios:[1.2,1.5,2,2.25,2.7,3.1],tooltips:{callbacks:{label:function(tooltipItem,data){let label=data.datasets[tooltipItem.datasetIndex].label||'';let value=parseFloat(tooltipItem.yLabel);if(label){label=' '+label+': ';}
+					label+=value.toString().replace(".",",");return label;}}},scales:{xAxes:[{gridLines:{color:"#353535"},ticks:{fontColor:'#eee'}}],yAxes:[{gridLines:{color:"#353535",zeroLineColor:"#666"},ticks:{beginAtZero:true,fontColor:'#eee',callback:function(value,index,values){return value.toString().replace(".",",");}}}]},annotation:{annotations:[{drawTime:"afterDatasetsDraw",id:"vline",type:"line",mode:"vertical",scaleID:"x-axis-0",value:'07-01',borderColor:"#aaa",borderWidth:1,borderDash:[5,5],borderDashOffset:0,label:{position:"center",backgroundColor:'#212121',content:"-21d",enabled:true,font:{style:"bold",size:10,color:"#000"},xPadding:4,yPadding:4,cornerRadius:0}}]}}}));chartList.push(new Chart(document.getElementById('myChart').getContext('2d'),{type:'line',data:{labels:["28-12","29-12","30-12","31-12","01-01","02-01","03-01","04-01","05-01","06-01","07-01","08-01","09-01","10-01","11-01","12-01","13-01","14-01","15-01","16-01","17-01","18-01","19-01","20-01","21-01","22-01","23-01","24-01","25-01","26-01","27-01","28-01"],datasets:[{label:'aantal geleverde dosissen (cumulatief)',data:[10725,10725,10725,10725,10725,10725,10725,189833,189833,189833,189833,189833,189833,189833,297473,297473,297473,297473,301473,301473,301473,388053,388053,388053,388053,392053,392053,392053,470443,470443,470443,470443],backgroundColor:'#b39ddb',borderColor:'#b39ddb',borderWidth:2,fill:false,pointRadius:2},{label:'aantal toegediende dosissen (cumulatief)',data:[298,299,778,787,787,787,787,788,2288,6050,14081,23159,26356,26749,32175,47631,67840,88930,110898,115854,118698,128621,146852,166147,193474,220710,227948,229726,238999,247668,258710,266768],backgroundColor:'#bbdefb',borderColor:'#bbdefb',borderWidth:2,fill:false,spanGaps:true,pointRadius:2},{label:'beschikbare dosissen (na reserve)',data:[10129,10127,9169,9151,9151,9151,9151,188257,185257,177733,161671,143515,137121,136335,233123,202211,161793,119613,79677,69765,64077,131029,94929,57183,2529,-47881,-62343,-65899,-6055,-20847,-38225,-47581],backgroundColor:'#e57373',borderColor:'#e57373',borderWidth:2,fill:false,spanGaps:true,pointRadius:2}]},options:{responsive:true,aspectRatio:2,aspectRatios:[1,1.5,2,2,2,2],tooltips:{callbacks:{label:function(tooltipItem,data){let label=data.datasets[tooltipItem.datasetIndex].label||'';let value=parseInt(tooltipItem.yLabel);if(label){label=' '+label+': ';}
+					if(value>=1000||value<=-1000){label+=value.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}else{label+=value;}
+					return label;}}},scales:{xAxes:[{gridLines:{color:"#353535"},ticks:{fontColor:'#eee'}}],yAxes:[{gridLines:{color:"#353535",zeroLineColor:"#666"},ticks:{beginAtZero:true,fontColor:'#eee',callback:function(value,index,values){if(parseInt(value)>=1000||parseInt(value)<=-1000){return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}
+						return value;}}}]}}}));chartList.push(new Chart(document.getElementById('vaccinesAdministeredChart').getContext('2d'),{type:'bar',data:{labels:["28-12","29-12","30-12","31-12","01-01","02-01","03-01","04-01","05-01","06-01","07-01","08-01","09-01","10-01","11-01","12-01","13-01","14-01","15-01","16-01","17-01","18-01","19-01","20-01","21-01","22-01","23-01","24-01","25-01","26-01","27-01","28-01"],datasets:[{label:'2e dosis',backgroundColor:'#81c784',data:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,181,422,0,31,7,0,0,1273,2353,3380]},{label:'1e dosis',backgroundColor:'#ffb74d',data:[298,1,479,9,0,0,0,1,1500,3762,8031,9078,3197,393,5426,15456,20209,21090,21968,4956,2844,9814,18050,18873,27327,27205,7231,1778,9273,7396,8689,4678]}]},options:{responsive:true,aspectRatio:2,aspectRatios:[1,1.5,2,2,2,2],legend:{reverse:true},tooltips:{callbacks:{afterTitle:function(){tooltipTotal=0;},label:function(tooltipItem,data){let label=data.datasets[tooltipItem.datasetIndex].label||'';let value=parseInt(tooltipItem.yLabel);tooltipTotal+=value;if(label){label=' '+label+': ';}
+					if(value>=1000||value<=-1000){label+=value.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}else{label+=value;}
+					return label;},footer:function(){let total=tooltipTotal;if(total>=1000||total<=-1000){total=tooltipTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}
+					return'Totaal: '+total;}}},scales:{xAxes:[{stacked:true,gridLines:{color:"#353535"},ticks:{fontColor:'#eee'}}],yAxes:[{stacked:true,gridLines:{color:"#353535",zeroLineColor:"#666"},ticks:{beginAtZero:true,fontColor:'#eee',callback:function(value,index,values){if(parseInt(value)>=1000){return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}
+						return value;}}}]},annotation:{annotations:[{drawTime:"afterDatasetsDraw",id:"vline",type:"line",mode:"vertical",scaleID:"x-axis-0",value:'07-01',borderColor:"#aaa",borderWidth:1,borderDash:[5,5],borderDashOffset:0,label:{position:"middle",backgroundColor:'#212121',content:"-21d",enabled:true,font:{style:"bold",size:10,color:"#000"},xPadding:4,yPadding:4,cornerRadius:0}},{drawTime:"afterDatasetsDraw",id:"hline",type:"line",mode:"horizontal",scaleID:"y-axis-0",value:8031,borderColor:"#aaa",borderWidth:1,borderDash:[5,5],borderDashOffset:0,label:{position:"left",backgroundColor:'#212121',content:"8.031",enabled:true,font:{style:"bold",size:10,color:"#000"},xPadding:4,yPadding:4,cornerRadius:0}}]}}}));chartList.push(new Chart(document.getElementById('dosesAdministeredCumulativeChart').getContext('2d'),{type:'line',data:{labels:["28-12","29-12","30-12","31-12","01-01","02-01","03-01","04-01","05-01","06-01","07-01","08-01","09-01","10-01","11-01","12-01","13-01","14-01","15-01","16-01","17-01","18-01","19-01","20-01","21-01","22-01","23-01","24-01","25-01","26-01","27-01","28-01"],datasets:[{label:'1e dosis (cumulatief)',data:[298,299,778,787,787,787,787,788,2288,6050,14081,23159,26356,26749,32175,47631,67840,88930,110898,115854,118698,128512,146562,165435,192762,219967,227198,228976,238249,245645,254334,259012],backgroundColor:'#ffb74d',borderColor:'#ffb74d',borderWidth:2,fill:false,pointRadius:2},{label:'2e dosis (cumulatief)',data:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,109,290,712,712,743,750,750,750,2023,4376,7756],backgroundColor:"#81c784",borderColor:'#81c784',borderWidth:2,fill:false,spanGaps:true,pointRadius:2}]},options:{responsive:true,aspectRatio:2,aspectRatios:[1,1.5,2,2,2,2],elements:{point:{borderColor:"#eee"}},tooltips:{callbacks:{afterTitle:function(){tooltipTotal=0;},label:function(tooltipItem,data){let label=data.datasets[tooltipItem.datasetIndex].label||'';let value=parseInt(tooltipItem.yLabel);tooltipTotal+=value;if(label){label=' '+label+': ';}
+					if(value>=1000||value<=-1000){label+=value.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}else{label+=value;}
+					return label;},footer:function(){let total=tooltipTotal;if(total>=1000||total<=-1000){total=tooltipTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}
+					return'Totaal: '+total;}}},scales:{xAxes:[{gridLines:{color:"#333"},ticks:{fontColor:'#eee'}}],yAxes:[{gridLines:{color:"#333",zeroLineColor:"#666"},ticks:{beginAtZero:true,fontColor:'#eee',callback:function(value,index,values){if(parseInt(value)>=1000){return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");}
+						return value;}}}]},annotation:{annotations:[{drawTime:"afterDatasetsDraw",id:"vline",type:"line",mode:"vertical",scaleID:"x-axis-0",value:'07-01',borderColor:"#aaa",borderWidth:1,borderDash:[5,5],borderDashOffset:0,label:{position:"middle",backgroundColor:'#212121',content:"-21 d",enabled:true,font:{style:"bold",size:10,color:"#000"},xPadding:4,yPadding:4,cornerRadius:0}},{drawTime:"afterDatasetsDraw",id:"hline",type:"line",mode:"horizontal",scaleID:"y-axis-0",value:14081,borderColor:"#aaa",borderWidth:1,borderDash:[5,5],borderDashOffset:0,label:{position:"left",backgroundColor:'#212121',content:"14.081",enabled:true,font:{style:"bold",size:10,color:"#000"},xPadding:4,yPadding:4,cornerRadius:0}}]}}}));function chartResize(){let key=getAspectRatioKey();for(let i=0;i<chartList.length;i++){let chart=chartList[i];let currentAr=chart.aspectRatio;let ar=chart.options.aspectRatios[key];if(currentAr!==ar){chart.aspectRatio=ar;chart.resize();}}}
+window.addEventListener("load",chartResize);window.addEventListener("resize",chartResize);</script>
+</body>
+<!-- s4qp -->
+</html>
