@@ -18,6 +18,7 @@ export async function handler() {
 	} catch (e) {
 		console.error('Something went wrong')
 		console.error(e)
+		throw new Error('Handle failed, failing lambda run')
 	}
 }
 
