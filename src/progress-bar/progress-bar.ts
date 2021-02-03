@@ -2,7 +2,11 @@ const completed = '█'
 const uncompleted = '░'
 
 export function getProgressFromTweet(tweetText: string): number {
-	return Number(tweetText.replace(/[█░%]/g, ''))
+	if (!tweetText) {
+		return 0
+	}
+	const progress = Number(tweetText.replace(/[█░%]/g, ''));
+	return !isNaN(progress) ? progress : 0
 }
 
 export function convertProgressToTextBar(progress: number, numberOfChars = 25): string {
