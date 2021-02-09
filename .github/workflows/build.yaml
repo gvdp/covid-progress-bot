@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build PROD
+    name: Build and Deploy
     steps:
       - uses: actions/checkout@v2
         with:
@@ -15,7 +15,7 @@ jobs:
         env:
           NODE_ENV: production
       - run: yarn build
-      - name: default deploy
+      - name: deploy to aws
         uses: appleboy/lambda-action@master
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -23,8 +23,3 @@ jobs:
           aws_region: eu-central-1
           function_name: covid-vaccin-progress-tracker
           zip_file: dist/lambda.zip
-#          memory_size: 128
-#          timeout: 10
-#          handler: foobar
-#          role: arn:aws:iam::xxxxxxxxxxx:role/test1234
-#          runtime: nodejs12.x
