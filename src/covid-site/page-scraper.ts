@@ -4,19 +4,25 @@ const cheerio = require('cheerio')
 export function getProgressFromPage(page: string): number {
 	const $ = cheerio.load(page)
 
-	let message = $('.card-body .pb-3')
+	const htmlNodeContainingValue = $('.card-body .pb-3')
 					.filter((i, cardHeader) => {
-						return $(cardHeader).text().trim() === 'gedeeltelijk gevaccineerd'
+						return $(cardHeader).text().trim() === 'volledig gevaccineerd'
 					})
 					.first()
 					.parents('.card-body').first()
-					.find('.row.mb-2').last()
-					.find('.col-auto .ps-1')
+					.find('.row.mb-2')
+					.filter((i, rowEl) => {
+						return $(rowEl).text().includes('Vaccinatiegraad')
+					})
+					.first()
 
-	const progressFromPage = Number(message.html().replace('%', '').replace(',', '.'))
+	const cleanValue: string = htmlNodeContainingValue.text().replace('Vaccinatiegraad', '')
+					.replace('%', '')
+					.replace(',', '.').trim();
 
+	console.log('Percentage in html: ', cleanValue)
+	const progressFromPage = Number(cleanValue)
 	if (!isValidPercentage(progressFromPage)) throw new Error(`Scraping went weird, returns ${progressFromPage}`)
-
 	return progressFromPage
 }
 
