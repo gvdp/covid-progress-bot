@@ -14,3 +14,8 @@ export function convertProgressToTextBar(progress: number, numberOfChars = 25): 
 	const progressBar = completed.repeat(numberOfCompletedBars) + uncompleted.repeat(numberOfChars - numberOfCompletedBars)
 	return progressBar + ' ' + progress + '%'
 }
+
+
+export function shouldItBeTweeted(progress: number, lastProgress: number) {
+	return progress > 1 && progress > lastProgress;
+}

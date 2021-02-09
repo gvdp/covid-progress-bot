@@ -1,6 +1,8 @@
 import {getLatestTweet, tweet} from "./twitter/twitter-client";
 import {getCurrentProgress} from "./covid-site/web-client";
-import {convertProgressToTextBar, getProgressFromTweet} from "./progress-bar/progress-bar";
+import {convertProgressToTextBar, getProgressFromTweet, shouldItBeTweeted} from "./progress-bar/progress-bar";
+
+
 
 
 export async function handler() {
@@ -10,7 +12,7 @@ export async function handler() {
 		const lastProgress: number = getProgressFromTweet(await getLatestTweet())
 		console.log('Current Scraped Progress:', progress)
 		console.log('Last Tweeted Progress:', lastProgress)
-		if (progress > lastProgress) {
+		if (shouldItBeTweeted(progress, lastProgress)) {
 			await tweet(convertProgressToTextBar(progress))
 		} else {
 			console.log('Already tweeted')
