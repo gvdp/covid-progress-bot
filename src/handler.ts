@@ -15,7 +15,7 @@ export async function handler() {
 		if (shouldItBeTweeted(progress, lastProgress)) {
 			await tweet(convertProgressToTextBar(progress))
 		} else {
-			console.log('Already tweeted')
+			console.log('No tweet sent')
 		}
 	} catch (e) {
 		console.error('Something went wrong')
