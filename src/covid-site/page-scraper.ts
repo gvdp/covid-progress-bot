@@ -16,7 +16,7 @@ export function getProgressFromResponse(jsonResponse: CovidApiResponse) {
 					.reduce(sum, 0)
 
 	console.log('Total second doses administered: ', totalSecondDoses)
-	let totalPopulation = 11472153;
+	const totalPopulation = 11492641;
 	return Math.round((totalSecondDoses / totalPopulation) * 10000) / 100
 }
 
