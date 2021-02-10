@@ -8,9 +8,14 @@ const tweets = [
 	},
 ]
 
+const covidApiResponse = require('../test-data/api-response.json')
+
 const config = {
 	'GET /1.1/statuses/user_timeline.json': (req, res) => {
 		return res.json(tweets)
+	},
+	'GET /api/v1/administered.json': (req, res) => {
+		return res.json(covidApiResponse)
 	},
 	'POST /1.1/statuses/update.json': (req, res) => {
 		tweets.unshift({

@@ -1,0 +1,1086 @@
+{
+  "result": {
+    "administered": [
+      {
+        "date": "2021-02-09",
+        "first_dose": 20,
+        "second_dose": 24,
+        "region": null
+      },
+      {
+        "date": "2021-02-09",
+        "first_dose": 1637,
+        "second_dose": 4329,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-09",
+        "first_dose": 1381,
+        "second_dose": 3548,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-09",
+        "first_dose": 124,
+        "second_dose": 563,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-09",
+        "first_dose": 7,
+        "second_dose": 72,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-02-08",
+        "first_dose": 15,
+        "second_dose": 10,
+        "region": null
+      },
+      {
+        "date": "2021-02-08",
+        "first_dose": 731,
+        "second_dose": 4988,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-08",
+        "first_dose": 408,
+        "second_dose": 452,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-08",
+        "first_dose": 160,
+        "second_dose": 85,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-08",
+        "first_dose": 1,
+        "second_dose": 58,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-02-07",
+        "first_dose": 0,
+        "second_dose": 3,
+        "region": null
+      },
+      {
+        "date": "2021-02-07",
+        "first_dose": 255,
+        "second_dose": 2345,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-07",
+        "first_dose": 2,
+        "second_dose": 15,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-07",
+        "first_dose": 24,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-06",
+        "first_dose": 4,
+        "second_dose": 5,
+        "region": null
+      },
+      {
+        "date": "2021-02-06",
+        "first_dose": 683,
+        "second_dose": 3920,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-06",
+        "first_dose": 139,
+        "second_dose": 458,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-06",
+        "first_dose": 98,
+        "second_dose": 16,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-05",
+        "first_dose": 27,
+        "second_dose": 41,
+        "region": null
+      },
+      {
+        "date": "2021-02-05",
+        "first_dose": 2647,
+        "second_dose": 13029,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-05",
+        "first_dose": 3296,
+        "second_dose": 5475,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-05",
+        "first_dose": 403,
+        "second_dose": 719,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-05",
+        "first_dose": 87,
+        "second_dose": 18,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-02-04",
+        "first_dose": 58,
+        "second_dose": 69,
+        "region": null
+      },
+      {
+        "date": "2021-02-04",
+        "first_dose": 3653,
+        "second_dose": 12273,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-04",
+        "first_dose": 3495,
+        "second_dose": 7071,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-04",
+        "first_dose": 609,
+        "second_dose": 1664,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-04",
+        "first_dose": 35,
+        "second_dose": 60,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-02-03",
+        "first_dose": 46,
+        "second_dose": 59,
+        "region": null
+      },
+      {
+        "date": "2021-02-03",
+        "first_dose": 4359,
+        "second_dose": 9009,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-03",
+        "first_dose": 3490,
+        "second_dose": 6515,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-03",
+        "first_dose": 989,
+        "second_dose": 2537,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-03",
+        "first_dose": 92,
+        "second_dose": 11,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-02-02",
+        "first_dose": 130,
+        "second_dose": 111,
+        "region": null
+      },
+      {
+        "date": "2021-02-02",
+        "first_dose": 5301,
+        "second_dose": 6617,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-02",
+        "first_dose": 2994,
+        "second_dose": 5025,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-02",
+        "first_dose": 497,
+        "second_dose": 687,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-02",
+        "first_dose": 139,
+        "second_dose": 77,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-02-01",
+        "first_dose": 13,
+        "second_dose": 1,
+        "region": null
+      },
+      {
+        "date": "2021-02-01",
+        "first_dose": 2876,
+        "second_dose": 3121,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-02-01",
+        "first_dose": 526,
+        "second_dose": 46,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-02-01",
+        "first_dose": 174,
+        "second_dose": 6,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-02-01",
+        "first_dose": 1,
+        "second_dose": 111,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-31",
+        "first_dose": 509,
+        "second_dose": 243,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-31",
+        "first_dose": 46,
+        "second_dose": 80,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-31",
+        "first_dose": 8,
+        "second_dose": 4,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-31",
+        "first_dose": 0,
+        "second_dose": 1,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-30",
+        "first_dose": 3,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-30",
+        "first_dose": 1401,
+        "second_dose": 2519,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-30",
+        "first_dose": 102,
+        "second_dose": 93,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-30",
+        "first_dose": 28,
+        "second_dose": 30,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-30",
+        "first_dose": 1,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-29",
+        "first_dose": 49,
+        "second_dose": 9,
+        "region": null
+      },
+      {
+        "date": "2021-01-29",
+        "first_dose": 6841,
+        "second_dose": 2636,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-29",
+        "first_dose": 3408,
+        "second_dose": 4074,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-29",
+        "first_dose": 703,
+        "second_dose": 937,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-29",
+        "first_dose": 14,
+        "second_dose": 53,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-28",
+        "first_dose": 121,
+        "second_dose": 35,
+        "region": null
+      },
+      {
+        "date": "2021-01-28",
+        "first_dose": 9772,
+        "second_dose": 2046,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-28",
+        "first_dose": 4040,
+        "second_dose": 4067,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-28",
+        "first_dose": 701,
+        "second_dose": 809,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-28",
+        "first_dose": 20,
+        "second_dose": 75,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-27",
+        "first_dose": 8647,
+        "second_dose": 765,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-27",
+        "first_dose": 3001,
+        "second_dose": 1538,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-27",
+        "first_dose": 807,
+        "second_dose": 777,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-27",
+        "first_dose": 248,
+        "second_dose": 2,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-27",
+        "first_dose": 57,
+        "second_dose": 19,
+        "region": null
+      },
+      {
+        "date": "2021-01-26",
+        "first_dose": 6466,
+        "second_dose": 37,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-26",
+        "first_dose": 2952,
+        "second_dose": 596,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-26",
+        "first_dose": 443,
+        "second_dose": 652,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-26",
+        "first_dose": 137,
+        "second_dose": 72,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-26",
+        "first_dose": 77,
+        "second_dose": 1,
+        "region": null
+      },
+      {
+        "date": "2021-01-25",
+        "first_dose": 8549,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-25",
+        "first_dose": 1762,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-25",
+        "first_dose": 289,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-25",
+        "first_dose": 121,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-25",
+        "first_dose": 63,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-24",
+        "first_dose": 1737,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-24",
+        "first_dose": 99,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-24",
+        "first_dose": 4,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-24",
+        "first_dose": 5,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-23",
+        "first_dose": 7234,
+        "second_dose": 7,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-23",
+        "first_dose": 448,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-23",
+        "first_dose": 151,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-23",
+        "first_dose": 10,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-23",
+        "first_dose": 7,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-22",
+        "first_dose": 21728,
+        "second_dose": 29,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-22",
+        "first_dose": 5810,
+        "second_dose": 1,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-22",
+        "first_dose": 881,
+        "second_dose": 1,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-22",
+        "first_dose": 85,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-22",
+        "first_dose": 150,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-21",
+        "first_dose": 19481,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-21",
+        "first_dose": 8512,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-21",
+        "first_dose": 1010,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-21",
+        "first_dose": 262,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-21",
+        "first_dose": 138,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-20",
+        "first_dose": 13764,
+        "second_dose": 418,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-20",
+        "first_dose": 5152,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-20",
+        "first_dose": 889,
+        "second_dose": 4,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-20",
+        "first_dose": 43,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-20",
+        "first_dose": 105,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-19",
+        "first_dose": 10882,
+        "second_dose": 10,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-19",
+        "first_dose": 6127,
+        "second_dose": 116,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-19",
+        "first_dose": 1254,
+        "second_dose": 55,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-19",
+        "first_dose": 79,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-19",
+        "first_dose": 80,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-18",
+        "first_dose": 6012,
+        "second_dose": 109,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-18",
+        "first_dose": 4013,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-18",
+        "first_dose": 128,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-18",
+        "first_dose": 135,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-18",
+        "first_dose": 76,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-17",
+        "first_dose": 3128,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-17",
+        "first_dose": 6,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-17",
+        "first_dose": 4,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-17",
+        "first_dose": 4,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-16",
+        "first_dose": 4680,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-16",
+        "first_dose": 326,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-16",
+        "first_dose": 17,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-15",
+        "first_dose": 15522,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-15",
+        "first_dose": 6360,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-15",
+        "first_dose": 809,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-15",
+        "first_dose": 72,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-14",
+        "first_dose": 13994,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-14",
+        "first_dose": 6771,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-14",
+        "first_dose": 1706,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-14",
+        "first_dose": 10,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-14",
+        "first_dose": 77,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-13",
+        "first_dose": 9518,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-13",
+        "first_dose": 7605,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-13",
+        "first_dose": 3334,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-13",
+        "first_dose": 55,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-13",
+        "first_dose": 79,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-12",
+        "first_dose": 7967,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-12",
+        "first_dose": 6263,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-12",
+        "first_dose": 1105,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-12",
+        "first_dose": 86,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-12",
+        "first_dose": 100,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-11",
+        "first_dose": 3745,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-11",
+        "first_dose": 1516,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-11",
+        "first_dose": 10,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-11",
+        "first_dose": 143,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-11",
+        "first_dose": 35,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-10",
+        "first_dose": 348,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-10",
+        "first_dose": 36,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-10",
+        "first_dose": 11,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-10",
+        "first_dose": 1,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-09",
+        "first_dose": 3148,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-09",
+        "first_dose": 37,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-09",
+        "first_dose": 2,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-08",
+        "first_dose": 2975,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-08",
+        "first_dose": 4874,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-08",
+        "first_dose": 1230,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-08",
+        "first_dose": 52,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-08",
+        "first_dose": 16,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-07",
+        "first_dose": 2144,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-07",
+        "first_dose": 4882,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-07",
+        "first_dose": 985,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-07",
+        "first_dose": 47,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-07",
+        "first_dose": 65,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-06",
+        "first_dose": 914,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-06",
+        "first_dose": 1911,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-06",
+        "first_dose": 986,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-06",
+        "first_dose": 34,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-06",
+        "first_dose": 19,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-05",
+        "first_dose": 35,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-05",
+        "first_dose": 835,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-05",
+        "first_dose": 616,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2021-01-05",
+        "first_dose": 73,
+        "second_dose": 0,
+        "region": "Ostbelgien"
+      },
+      {
+        "date": "2021-01-05",
+        "first_dose": 1,
+        "second_dose": 0,
+        "region": null
+      },
+      {
+        "date": "2021-01-04",
+        "first_dose": 1,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2021-01-01",
+        "first_dose": 6,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2021-01-01",
+        "first_dose": 1,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2020-12-31",
+        "first_dose": 9,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2020-12-30",
+        "first_dose": 473,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2020-12-30",
+        "first_dose": 1,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2020-12-30",
+        "first_dose": 5,
+        "second_dose": 0,
+        "region": "Brussels"
+      },
+      {
+        "date": "2020-12-29",
+        "first_dose": 1,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2020-12-28",
+        "first_dose": 122,
+        "second_dose": 0,
+        "region": "Flanders"
+      },
+      {
+        "date": "2020-12-28",
+        "first_dose": 119,
+        "second_dose": 0,
+        "region": "Wallonia"
+      },
+      {
+        "date": "2020-12-28",
+        "first_dose": 56,
+        "second_dose": 0,
+        "region": "Brussels"
+      }
+    ]
+  }
+}

@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "nodemon -e ts src/scheduler",
     "start": "run-p serve mock",
-    "mock": "mocker ./twitter-mock/api.js",
+    "mock": "mocker mock/api.js",
     "test": "jest",
     "build": "rm -rf dist && parcel build src/handler.ts --out-file index.js --no-source-maps --target node  --bundle-node-modules && (cd dist && zip -r -D lambda.zip *)",
     "test-watch": "jest --watch"
