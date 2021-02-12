@@ -2,7 +2,7 @@ import axios from "axios";
 const oauth = require('oauth-signature')
 
 const twitterApi = axios.create({
-	baseURL: process.env.TWITTER_API_URL,
+	baseURL: process.env.TWITTER_API_URL || 'http://localhost:3721',
 });
 
 const bearerConfig = {
