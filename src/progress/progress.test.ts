@@ -26,7 +26,7 @@ test('should tweet based on last and current progress', () => {
 
 
 test('should calculate progress from json response', () => {
-	let testResponse = path.resolve(process.cwd(), 'test-data/api-response.json');
+	let testResponse = path.resolve(process.cwd(), 'mock/test-data/api-response.json');
 	const testResponseFile = fs.readFileSync(testResponse.toString())
 
 	expect(getProgressFromResponse(JSON.parse(testResponseFile.toString()))).toEqual(1.03)

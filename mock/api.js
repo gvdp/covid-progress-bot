@@ -1,10 +1,10 @@
 console.log('started mock')
 
 
-const tweets = require('../test-data/last-tweet-response.json')
+const tweets = require('./test-data/last-tweet-response.json')
 
 console.log(tweets)
-const covidApiResponse = require('../test-data/api-response.json')
+const covidApiResponse = require('./test-data/api-response.json')
 
 const config = {
 	'HEAD /': (req, res) => {
