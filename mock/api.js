@@ -1,16 +1,15 @@
 console.log('started mock')
 
 
-const tweets = [
-	{
-		'created_at': 'Thu Apr 06 15:45:43 +0000 2017',
-		'text': '█░░░░░░░░░░░░░░░░░░░░░░░ 2.321%',
-	},
-]
+const tweets = require('../test-data/last-tweet-response.json')
 
+console.log(tweets)
 const covidApiResponse = require('../test-data/api-response.json')
 
 const config = {
+	'HEAD /': (req, res) => {
+		return res.json('OK')
+	},
 	'GET /1.1/statuses/user_timeline.json': (req, res) => {
 		return res.json(tweets)
 	},

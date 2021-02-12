@@ -1,14 +1,17 @@
-import {getLatestTweet, tweet} from "./twitter/twitter-client";
-import {getCurrentProgress} from "./covid-site/web-client";
-import {convertProgressToTextBar, getProgressFromTweet, shouldItBeTweeted} from "./progress-bar/progress-bar";
-
-
+import {getLatestTweet, tweet} from "./web/twitter-api";
+import {getCurrentProgress} from "./web/covid-api";
+import {
+	convertProgressToTextBar,
+	getProgressFromResponse,
+	getProgressFromTweet,
+	shouldItBeTweeted
+} from "./progress/progress";
 
 
 export async function handler() {
 	console.log('Executing check')
 	try {
-		const progress: number = await getCurrentProgress()
+		const progress: number = getProgressFromResponse(await getCurrentProgress())
 		const lastProgress: number = getProgressFromTweet(await getLatestTweet())
 		console.log('Current Scraped Progress:', progress)
 		console.log('Last Tweeted Progress:', lastProgress)

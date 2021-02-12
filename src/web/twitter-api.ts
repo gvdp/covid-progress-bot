@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const oauth = require('oauth-signature')
 
 const twitterApi = axios.create({
@@ -10,14 +9,14 @@ const bearerConfig = {
 	headers: {Authorization: `Bearer ${process.env.TWITTER_BEARER_TOKEN}`}
 };
 
-const statusUpdateEndpoint = '/1.1/statuses/update.json'
-const statusEndpointUrl = `${process.env.TWITTER_API_URL}${statusUpdateEndpoint}`;
-const oauthConsumerKey = process.env.consumer_key;
-const oauthToken = process.env.token;
-const consumerSecret = process.env.consumer_secret;
-const tokenSecret = process.env.secret;
+const statusUpdateEndpoint: string = '/1.1/statuses/update.json'
+const statusEndpointUrl: string = `${process.env.TWITTER_API_URL}${statusUpdateEndpoint}`;
+const oauthConsumerKey: string = process.env.consumer_key;
+const oauthToken: string = process.env.token;
+const consumerSecret: string = process.env.consumer_secret;
+const tokenSecret: string = process.env.secret;
 
-export async function getLatestTweet() {
+export async function getLatestTweet(): Promise<string> {
 	const twitterBotName = 'covidvaccins_be'
 	const listResponse = await twitterApi.get('/1.1/statuses/user_timeline.json?screen_name=' + twitterBotName, bearerConfig)
 					.then(resp => resp.data)
@@ -25,7 +24,7 @@ export async function getLatestTweet() {
 }
 
 
-export async function tweet(tweetText: string) {
+export async function tweet(tweetText: string): Promise<void> {
 	console.log('Tweeting', tweetText)
 
 	const httpMethod = 'POST';
@@ -62,7 +61,7 @@ export async function tweet(tweetText: string) {
 	}
 }
 
-function randomString(length) {
+function randomString(length: number): string {
 	const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	let result = '';
 	for (let i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
