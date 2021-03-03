@@ -20,7 +20,8 @@ test('should transform percentage in progress text', () => {
 
 test('should tweet based on last and current progress', () => {
 	expect(shouldItBeTweeted(2, 3)).toEqual(false)
-	expect(shouldItBeTweeted(3, 2)).toEqual(true)
+	expect(shouldItBeTweeted(3, 2.8)).toEqual(false)
+	expect(shouldItBeTweeted(3, 2.7)).toEqual(true)
 	expect(shouldItBeTweeted(.3, .2)).toEqual(false)
 })
 

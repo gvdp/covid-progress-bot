@@ -18,7 +18,7 @@ export function convertProgressToTextBar(progress: number, numberOfChars = 25): 
 }
 
 export function shouldItBeTweeted(progress: number, lastProgress: number): boolean {
-	return progress > 1 && progress > lastProgress;
+	return progress > 1 && progress - lastProgress > .25;
 }
 
 export function getProgressFromResponse(jsonResponse: CovidApiResponse): number {
