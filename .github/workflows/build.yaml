@@ -15,8 +15,6 @@ jobs:
         with:
           ref: main
       - uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
         env:
           NODE_ENV: production
       - run: yarn test
