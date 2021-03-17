@@ -8,7 +8,7 @@
     "mock": "mocker mock/api.js",
     "test": "start-server-and-test mock http://localhost:3721 jest",
     "test-watch": "jest --watch",
-    "build": "rm -rf dist && parcel build src/handler.ts --out-file index.js --no-source-maps --target node  --bundle-node-modules && (cd dist && zip -r -D lambda.zip *)"
+    "build": "rm -rf dist && ncc build src/handler.ts -o dist && (cd dist && zip -r -D lambda.zip *)"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.13.10",
@@ -25,10 +25,10 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
+    "@vercel/ncc": "^0.27.0",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.7",
-    "npm-run-all": "^4.1.5",
-    "parcel-bundler": "1.12.5"
+    "npm-run-all": "^4.1.5"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.9"
