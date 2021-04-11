@@ -8,6 +8,7 @@ const covidApi = axios.create({
 export interface CovidApiResponse {
 	result: {
 		administered: {
+			first_dose: number
 			second_dose: number
 		}[]
 	}

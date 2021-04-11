@@ -3,7 +3,7 @@ import {getCurrentProgress} from "./web/covid-api";
 import {
 	convertProgressToTextBar,
 	getProgressFromResponse,
-	getProgressFromTweet,
+	getProgressFromTweet, Progress,
 	shouldItBeTweeted
 } from "./progress/progress";
 
@@ -11,8 +11,8 @@ import {
 export async function handler() {
 	console.log('Executing check')
 	try {
-		const progress: number = getProgressFromResponse(await getCurrentProgress())
-		const lastProgress: number = getProgressFromTweet(await getLatestTweet())
+		const progress: Progress = getProgressFromResponse(await getCurrentProgress())
+		const lastProgress: Progress = getProgressFromTweet(await getLatestTweet())
 		console.log('Current Scraped Progress:', progress)
 		console.log('Last Tweeted Progress:', lastProgress)
 		if (shouldItBeTweeted(progress, lastProgress)) {
