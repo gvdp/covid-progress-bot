@@ -41,8 +41,8 @@ export function convertProgressToTextBar(progress: Progress, numberOfChars = 25)
 }
 
 export function shouldItBeTweeted(progress: Progress, lastProgress: Progress): boolean {
-	return progress.first > 1 && progress.first - lastProgress.first > .25
-					|| progress.second > 1 && progress.second - lastProgress.second > .25;
+	return progress.first > 1 && progress.second > 1 &&
+					(progress.first - lastProgress.first >= 1 || 1 && progress.second - lastProgress.second >= 1);
 }
 
 export function getProgressFromResponse(jsonResponse: CovidApiResponse): Progress {

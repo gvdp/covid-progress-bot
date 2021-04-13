@@ -25,9 +25,12 @@ test('should transform percentage in progress text', () => {
 
 test('should tweet based on last and current progress', () => {
 	expect(shouldItBeTweeted({first: 2 , second: 2},{first: 3  , second: 2})).toEqual(false)
-	expect(shouldItBeTweeted({first: 2 , second: 2.5},{first: 3  , second: 2})).toEqual(true)
+	expect(shouldItBeTweeted({first: 2 , second: 2.5},{first: 3  , second: 2})).toEqual(false)
+	expect(shouldItBeTweeted({first: 2 , second: 3},{first: 3  , second: 2})).toEqual(true)
 	expect(shouldItBeTweeted({first: 3 , second: 2},{first: 2.8, second: 2})).toEqual(false)
-	expect(shouldItBeTweeted({first: 3 , second: 2},{first: 2.7, second: 2})).toEqual(true)
+	expect(shouldItBeTweeted({first: 2.81 , second: 2},{first: 1.8, second: 2})).toEqual(true)
+	expect(shouldItBeTweeted({first: 2.81 , second: 0},{first: 1.8, second: 2})).toEqual(false)
+	expect(shouldItBeTweeted({first: 0 , second: 2},{first: 1.8, second: 2})).toEqual(false)
 	expect(shouldItBeTweeted({first: .3, second: 2},{first: .2 , second: 2})).toEqual(false)
 })
 
